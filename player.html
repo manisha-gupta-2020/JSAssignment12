@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M12 Assignment - The Music Player Application</title>
+    <script src="js/player.js" defer></script>
+</head>
+<body>
+    <!-- 
+        In Lab 19 you created a music player application using object-oriented programming techniques. The downside to this application is that it was for the most part, static. Albums were added manually in code, albums were added to the player manually in code, and the albums were also played manually in code. Your job in this assignment will be to do a minimal rewrite of the application that allows the user to pick an artist/album from a drop down menu on a web page and then click a play button to play the actual album. Every time the play button is clicked, you need to keep track of which albums are being played and how often. There should be a button on the screen that reads “Show my favorite album”. When the user clicks this button, it should show the user’s favorite album based on how many times it’s been played. When building the application, keep the following in mind:
+
+Store artists/albums within an array
+Bind that array to the drop down menu on the web page
+In code, iterate through the array and programmatically create new Album class instances based on each album within the array. You’ll also need to add these instances to the player.
+Add a play button to the web page. When the user selects an artist/album from the drop down menu and clicks the play button, the play() method should be called for that album. This will track that album as being played.
+When the user clicks the “show my favorite album” button, the favoriteAlbum() method should be called and the user’s favorite album based on number of plays should be displayed in the web page.
+
+     -->
+    <h1>The Music Player</h1>
+    <!-- ADD DROP DOWN MENU -->
+    <select name="album" id="albumPick"> <option value="">Pick an artist/album </option> </select>
+    <!-- ADD PLAY BUTTON -->
+    <!-- <input type="button" id="playRecord" value="Play"> -->
+    <button id="playRecord">Play</button>
+    <!-- ADD SHOW FAVORITE ALBUM BUTTON -->
+    <p id="favoriteAlbum" > <button > Show my favorite album.</button></p>
+    <!-- <button id="favoriteAlbum" > Show my favorite album.</button> -->
+</body>
+</html>
